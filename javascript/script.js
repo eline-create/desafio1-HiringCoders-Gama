@@ -17,7 +17,7 @@ dados.addEventListener("submit", (e) => {
 
     let content = document.getElementById("content");
     let carregando = `<h5> Carregando ... </h5>`;
-    let pronto = `<h5> Prontinho ;)</h5>`;
+    let pronto = `<h5> Prontinho. E-mail cadastrado ;)</h5>`;
 
     content.innerHTML = carregando;
 
