@@ -4,17 +4,19 @@ dados.addEventListener("submit", (e) => {
     e.preventDefault();
     let nome = document.getElementById("Nome").value;
     let email = document.getElementById("E-mail").value;
+
     let data = {
         nome,
         email,
     };
-    let convertData = JSON.stringify(data);
 
-    localStorage.setItem("dados", convertData);
-    console.log(localStorage.dados);
+    let newData = JSON.stringify(data);
+
+    localStorage.setItem("lead", newData);
+    console.log(data)
 
     let content = document.getElementById("content");
-    let carregando = ` <h5> Carregando ... </h5>`;
+    let carregando = `<h5> Carregando ... </h5>`;
     let pronto = `<h5> Prontinho ;)</h5>`;
 
     content.innerHTML = carregando;
